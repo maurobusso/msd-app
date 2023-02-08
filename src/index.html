@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="text-center mt-8 col-start-2 col-span-4">
+            <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Maximum Safe Dosage</span> Calculator</h1>
+            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">You can use this simple calculator to see how much local anestetic can be administered to any patient, by providing some pt informations</p>
+          </div>
+    </div>
+    <div>
+        <div class="grid grid-cols-6 gap-1 ">
+            <div class="item-center col-start-2 col-end-3 mt-16">
+                <form class='m-8'>
+                    <h1 class="mb-6 text-9xl font-bold text-gray-900 dark:text-gray-300">Patient Details</h1>
+                    <div class="mb-6">
+                        <label for="patientWeigth" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Patient Weigth</label>
+                        <input type="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="kg" id="patientWeigth"></input>
+                    </div>
+
+                    <div class="mb-6">
+                        <!-- <label for="patientSex" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Patient sex</label>
+                        <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required id="patientSex"></input> -->
+
+                    </div>
+
+
+                    <div class="flex items-start mb-6">
+                            <label for="age" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Is the patient 18?</label>
+                        <div class="flex items-center h-5">
+                            <input type="checkbox" value="age" class="w-4 h-4 ml-2 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required id="age"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-start-3 col-end-5 w-auto h-96 flex justify-center items-center">
+                <button type="button" class="w-56 h-28 flex justify-center items-center focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800" id="button">Calculate</button>
+            </div>
+            <div class="items-center col-end-7 col-span-2 mt-16">
+                <form class='w-1/2 m-8'>
+                    <h1 class="mb-6 text-9xl font-bold text-gray-900 dark:text-gray-300">Anaesthetic Details</h1>
+                    <div class="mb-6">
+                        <label for="drugName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Drug Name</label>
+                        <input class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required id="drugName"></input>
+                    </div>
+                    <div class="mb-6">
+                        <label for="drugConcentration" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Concentration %</label>
+                        <input type="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required id="drugConcentration"></input>
+                    </div>
+                    <div class="mb-6">
+                        <label for="msdForKilogram"class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">MSD for each Kg</label>
+                        <input type="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required id="msdForKilogram"></input>
+                    </div>
+                    <div class="mb-6">
+                        <label for="cartrigeSize" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cartrige size mg</label>
+                        <input type="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required id="cartrigeSize"></input>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="text-center col-start-2 col-span-4">
+                <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Results</span></h1>
+            </div>
+            <div class="text-3xl font-extrabold text-center col-start-2 col-span-4" id="results">
+            </div>
+        </div>
+    </div>
+    <div class="w-96 containe mx-auto" id="attention">
+        <div id="alert-2" class=" flex p-4 mb-4 text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+            <span class="sr-only">Info</span>
+            <div class="ml-3 text-sm font-medium">
+            Keep in mind that if a patient is less than 18 years old the MSD is different than adults <a href="#" class="font-semibold underline hover:no-underline"></a>.
+            </div>
+            <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-2" aria-label="Close">
+            <span class="sr-only">Close</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+    </div>      
+    
+<script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
