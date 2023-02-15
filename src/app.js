@@ -14,11 +14,6 @@ const maximumSafeDosage = document.getElementById('maximumSafeDosage')
 attention.style.visibility = 'hidden'
 genderAttention.style.visibility = 'hidden'
 
-
-
-
-//add toggle putton for male - female and add a text saying female if pregnat cant have LA
-
 button.addEventListener('click', calculate)
 
 function calculate(){
