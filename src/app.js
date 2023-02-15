@@ -8,9 +8,12 @@ const msdForKilogram = document.getElementById('msdForKilogram')
 const cartrigeSize = document.getElementById('cartrigeSize')
 const results = document.getElementById('results')
 const attention = document.getElementById('attention')
-attention.style.visibility = 'hidden'
-
+const femaleCheckbox = document.getElementById('female')
 const maximumSafeDosage = document.getElementById('maximumSafeDosage')
+
+attention.style.visibility = 'hidden'
+genderAttention.style.visibility = 'hidden'
+
 
 
 
@@ -30,6 +33,7 @@ function calculate(){
     document.getElementById('results').innerText = `This patient can have a maximum of ${msd} ml or a total of ${numberOfCartrige} cartriges`
 
     ageAlert()
+    sexAlert()
 }
 
 function ageAlert(){
@@ -38,4 +42,8 @@ function ageAlert(){
     }
 }
 
-
+function sexAlert(){
+    if(femaleCheckbox.checked === true){
+        genderAttention.style.visibility = 'visible'
+    }
+}
