@@ -7,7 +7,7 @@ const drugName = document.getElementById('drugName')
 const msdForKilogram = document.getElementById('msdForKilogram')
 const cartrigeSize = document.getElementById('cartrigeSize')
 const results = document.getElementById('results')
-const attention = document.getElementById('attention')
+// const attention = document.getElementById('attention')
 const femaleCheckbox = document.getElementById('female')
 const maximumSafeDosage = document.getElementById('maximumSafeDosage')
 
