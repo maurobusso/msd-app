@@ -1,6 +1,6 @@
 # Msd-app
 
-This is a one player blackjack game. I have built this project as a part of a module on the "Learn JavaScript" course from the Scrimba. 
+This app was made as a too to be used by podiatrist when calculating the ammount of local anaesthetic to safely inject into a patient.
 
 <a href="https://msd-app.netlify.app/">Try now</a>
 
