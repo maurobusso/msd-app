@@ -1,6 +1,6 @@
 # Msd-app
 
-This app was made as a too to be used by podiatrist when calculating the ammount of local anaesthetic to safely inject into a patient.
+This app was made as a tool to be used by podiatrist when calculating the ammount of local anaesthetic to safely inject into a patient.
 
 <a href="https://msd-app.netlify.app/">Try now</a>
 
