@@ -29,6 +29,8 @@ Optimizations:
 
 Lessons Learned: 
 
+During the development of this application I was able tu learn and practice Tailwind.css and flowbite a tailwind library. 
+
 #
 
 Mobile view
