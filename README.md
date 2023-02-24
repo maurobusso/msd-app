@@ -29,7 +29,7 @@ Optimizations:
 
 Lessons Learned: 
 
-During the development of this application I was able tu learn and practice Tailwind.css and flowbite a tailwind library. 
+During the development of this application I was able tu learn and practice Tailwind.css and flowbite a tailwind library. This greatly simplified and streamlined my experience sytling the page within the app.
 
 #
 
