@@ -24,6 +24,8 @@ How It's Made:
 
 Optimizations: 
 
+Some of the optimization that will be implemented includes a dark theme option.
+The presence of a database where all the possible local anaesthetics are stored and the possibilities of adding or changing the data associated to them such as MSD for kg.
 
 #
 
