@@ -37,3 +37,7 @@ During the development of this application I was able tu learn and practice Tail
 
 Mobile view
 
+<img align="left" width="250px" height="500px" src="https://github.com/maurobusso/msd-app/blob/main/mobile.jpg">
+<img align="left" width="250px" height="500px" src="https://github.com/maurobusso/msd-app/blob/main/mobile2.jpg">
+
+
