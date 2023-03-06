@@ -29,8 +29,7 @@ Optimizations:
 
 Lessons Learned: 
 
-During the development of this application, I was able to learn and practice Tailwind.css and flowbite, a tailwind library. This greatly simplified and streamlined my experience styling the page within the app.
-Tailwind also simplified the implementation of media queries.
+During the development of this application, I was able to learn and practice Tailwind.css and flowbite which is a tailwind library. This greatly simplified and streamlined my experience styling the implementation of media queries.
 
 #
 
