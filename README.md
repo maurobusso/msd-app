@@ -21,9 +21,9 @@ This project was realized from scratch by using HTML5, Tailwind.CSS and JavaScri
 
 Optimizations: 
 
-<br> -Some of the optimization that will be implemented includes a dark theme option.
-<br> -The presence of a database where all the possible local anesthetics are stored.
-<br> -The possibility of adding or changing the data associated to them such as MSD for kg.
+- Some of the optimization that will be implemented includes a dark theme option.
+- The presence of a database where all the possible local anesthetics are stored.
+- The possibility of adding or changing the data associated to them such as MSD for kg.
 
 #
 
