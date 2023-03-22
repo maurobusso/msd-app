@@ -4,7 +4,7 @@ This app was made as a tool to be used by podiatrist when calculating the amount
 
 <a href="https://msd-app.netlify.app/">Try now</a>
 
-<img width="700px" heigth="900" src="https://github.com/maurobusso/msd-app/blob/main/msd%20imgae.png">
+<img width="700px" heigth="900" src="https://github.com/maurobusso/msd-app/blob/main/msd-img.png">
 
 #
 
