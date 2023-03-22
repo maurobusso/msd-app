@@ -18,3 +18,5 @@ module.exports = {
     require('flowbite/plugin')
   ],
 }
+
+//npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch

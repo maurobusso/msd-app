@@ -21,10 +21,13 @@ function calculate(){
     let drugConc = drugConcentration.value
     let vialSize = cartrigeSize.value
 
+
     let msd = ((kg * msdForKg) / (10 * drugConc )).toFixed(2)
     let numberOfCartrige = (msd / vialSize).toFixed(2)
 
     document.getElementById('results').innerText = `This patient can have a maximum of ${msd} ml or a total of ${numberOfCartrige} cartriges`
+
+    unfilledInformation()
 
     ageAlert()
     sexAlert()
@@ -39,5 +42,11 @@ function ageAlert(){
 function sexAlert(){
     if(femaleCheckbox.checked){
         genderAttention.style.visibility = 'visible'
+    }
+}
+
+function unfilledInformation(){
+    if(weigth.value == '' || msdForKilogram.value == '' || drugConcentration.value == '' || cartrigeSize.value == ''){
+        document.getElementById('results').innerText = 'Please fill all the information'
     }
 }
