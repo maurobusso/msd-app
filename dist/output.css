@@ -1998,6 +1998,27 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 768px) {
+  .md\:m-20 {
+    margin: 5rem;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
