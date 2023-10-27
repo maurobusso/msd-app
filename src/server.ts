@@ -1,6 +1,6 @@
-import express, { Request, Response } from 'express';
-import mysql from 'mysql';
-const app = express();
+import express, { Request, Response } from 'express'
+import mysql from 'mysql'
+const app = express()
 
 // Create a MySQL connection
 const db = mysql.createConnection({

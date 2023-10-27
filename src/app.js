@@ -1,3 +1,4 @@
+"use strict";
 // const weigth = document.getElementById('patientWeigth') 
 // const patientSex = document.getElementById('patientSex')
 // const ageCheckbox = document.getElementById('age')
@@ -41,36 +42,36 @@
 // }
 //refactored code 
 // Use descriptive variable names for better readability
-var weightInput = document.getElementById('patientWeigth');
-var drugConcentrationInput = document.getElementById('drugConcentration');
-var msdForKilogramInput = document.getElementById('msdForKilogram');
-var cartrigeSizeInput = document.getElementById('cartrigeSize');
-var ageCheckbox = document.getElementById('age');
-var button = document.getElementById('button');
-var resultsOutput = document.getElementById('results');
-var femaleCheckbox = document.getElementById('female');
-var drugNameInput = document.getElementById('drugName');
-var sexInput = document.getElementById('patientSex');
-var maximumSafeDosage = document.getElementById('maximumSafeDosage');
+const weightInput = document.getElementById('patientWeigth');
+const drugConcentrationInput = document.getElementById('drugConcentration');
+const msdForKilogramInput = document.getElementById('msdForKilogram');
+const cartrigeSizeInput = document.getElementById('cartrigeSize');
+const ageCheckbox = document.getElementById('age');
+const button = document.getElementById('button');
+const resultsOutput = document.getElementById('results');
+const femaleCheckbox = document.getElementById('female');
+const drugNameInput = document.getElementById('drugName');
+const sexInput = document.getElementById('patientSex');
+const maximumSafeDosage = document.getElementById('maximumSafeDosage');
 // Use CSS classes for better styling control
-var attentionElement = document.getElementById('attention');
-var genderAttentionElement = document.getElementById('genderAttention');
-var DECIMAL_PLACES = 2;
+const attentionElement = document.getElementById('attention');
+const genderAttentionElement = document.getElementById('genderAttention');
+const DECIMAL_PLACES = 2;
 // Use event delegation for better performance
 button.addEventListener('click', calculate);
 function calculate() {
-    var kg = parseFloat(weightInput.value);
-    var msdForKg = parseFloat(msdForKilogramInput.value);
-    var drugConc = parseFloat(drugConcentrationInput.value);
-    var vialSize = parseFloat(cartrigeSizeInput.value);
+    const kg = parseFloat(weightInput.value);
+    const msdForKg = parseFloat(msdForKilogramInput.value);
+    const drugConc = parseFloat(drugConcentrationInput.value);
+    const vialSize = parseFloat(cartrigeSizeInput.value);
     if (isNaN(kg) || isNaN(msdForKg) || isNaN(drugConc) || isNaN(vialSize)) {
         // Handle invalid input values gracefully
         resultsOutput.innerText = 'Please fill all the information with valid numbers.';
         return;
     }
-    var msd = ((kg * msdForKg) / (10 * drugConc));
-    var numberOfCartridges = (msd / vialSize);
-    resultsOutput.innerText = "This patient can have a maximum of ".concat(msd, " ml or a total of ").concat(numberOfCartridges, " cartridges.");
+    const msd = ((kg * msdForKg) / (10 * drugConc));
+    const numberOfCartridges = (msd / vialSize);
+    resultsOutput.innerText = `This patient can have a maximum of ${msd} ml or a total of ${numberOfCartridges} cartridges.`;
     // Move the alerts to their respective functions
     ageAlert();
     sexAlert();
@@ -92,8 +93,8 @@ function sexAlert() {
     }
 }
 // Clear results when any input field changes
-var inputFields = [weightInput, msdForKilogramInput, drugConcentrationInput, cartrigeSizeInput];
-inputFields.forEach(function (input) {
+const inputFields = [weightInput, msdForKilogramInput, drugConcentrationInput, cartrigeSizeInput];
+inputFields.forEach((input) => {
     input.addEventListener('input', clearResults);
 });
 function clearResults() {
